@@ -1,0 +1,1 @@
+<?php require __DIR__.'/layout.php';?><h1>My orders</h1><?php foreach($orders as $o):?><article><b><?=e($o['order_number'])?></b> · <?=money($o['total'])?> · <?=e($o['status'])?></article><?php endforeach;?></main></body></html>
